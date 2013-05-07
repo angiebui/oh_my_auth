@@ -1,8 +1,12 @@
 <div class="container">
 
+<% if oauth_client %>
+ <h2> Show my stuff! </h2>
 
+
+<% else %>
   <p>Sign in with Google</p>
 
   <button><a href="/sign_in">Sign In</a></button>
-
+<% end %>
 </div>

@@ -8,9 +8,3 @@ def oauth_client
   )
 end
 
-def request_token
-  if not session[:request_token]
-  session[:request_token] = oauth_client.get_request_token(:oauth_callback => "http://localhost:9393/auth")
-  end
-session[:request_token]
-end
